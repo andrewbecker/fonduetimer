@@ -125,15 +125,11 @@ class TimerViewController: UIViewController {
         return "\(getMinutes(time: time)):\(getSeconds(time: time))"
     }
     
-    /**
-     Simple Alert
-     - Show alert with title and alert message and basic two actions
-     */
     func showSimpleAlert() {
         let alert = UIAlertController(title: "Steak is done", message: "", preferredStyle: UIAlertController.Style.alert)
         
         alert.addAction(UIAlertAction(title: "OK", style: UIAlertAction.Style.default, handler: { _ in
-            //Cancel Action
+            return
         }))
         self.present(alert, animated: true, completion: nil)
     }
